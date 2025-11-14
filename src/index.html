@@ -1,13 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeCraft | Crafting Digital Solutions</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="bg-gray-50 text-gray-800">
+      <!-- Header Starts Here -->
+      <header class="bg-white w-full top-0 left-0 shadow-md z-50">
+        <nav class="container flex items-center justify-between px-6 py-4">
+          <h1>
+            <a href="#" class="text-purple-600 font-semibold text-2xl"
+              >CodeCraft</a
+            >
+          </h1>
+          <ul class="flex gap-4 text-gray-600 font-medium">
+            <li><a href="#" class="hover:text-purple-600">Home</a></li>
+            <li><a href="#" class="hover:text-purple-600">About</a></li>
+            <li><a href="#" class="hover:text-purple-600">Services</a></li>
+            <li><a href="#" class="hover:text-purple-600">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Header Ends Here -->
+
+      <!-- Hero Starts Here -->
+      <section class="h-[89vh] flex">
+        <!-- Left col -->
+        <div
+          class="bg-white w-[50%] flex flex-col justify-center gap-2 px-[50px]"
+        >
+          <h1 class="font-bold text-3xl">Crafting Digital Solutions</h1>
+          <p class="w-[80%] text-sm">
+            Empowering businesses through innovative software development,
+            creative design, and cutting-edge technology.
+          </p>
+          <div class="flex gap-5 mt-3">
+            <a href="#" class="px-8 py-2 bg-purple-600 rounded-full text-white"
+              >Get Start</a
+            >
+            <a
+              href="#"
+              class="px-8 py-2 border-[1.5px] border-purple-600 rounded-full"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <!-- Right col -->
+        <div class="flex justify-center items-center w-[50%] bg-white">
+          <div class="w-[60%] h-[70%] rounded-lg overflow-hidden relative p-3">
+            <div
+              class="w-[200px] absolute top-0 left-0 p-3 bg-white rounded-lg"
+            >
+              <div class="bg-[#f5f5f5] p-4 rounded-lg">
+                <span class="font-medium text-3xl">256+</span>
+                <p class="text-xs pt-3">
+                  Lorem ipsum dolor sit amet, adipisicing elit. Tenetur, autem.
+                </p>
+              </div>
+            </div>
+            <div
+              class="p-3 bottom-0 right-0 bg-white absolute rounded-lg w-[160px]"
+            >
+              <div class="p-3 bg-purple-600 rounded-lg text-white">
+                <span class="text-3xl font-medium">70+</span>
+                <p class="text-xs pt-3">Lorem ipsum dolor sit, amet elit.</p>
+              </div>
+            </div>
+            <img
+              src="./images/2.jpg"
+              alt=""
+              class="object-cover w-full h-full rounded-lg"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Hero Ends Here -->
+    </main>
+  </body>
 </html>
