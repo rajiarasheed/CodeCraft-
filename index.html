@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeCraft | Crafting Digital Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="bg-gray-50 text-[#0a0c29]">
+      <!-- Header Starts Here -->
+      <header class="bg-white w-full top-0 left-0 shadow-lg z-50">
+        <nav class="flex items-center justify-between px-12 py-4 mx-auto">
+          <h1>
+            <a href="#" class="text-[#1c3f3a] font-semibold text-3xl"
+              >CodeCraft</a
+            >
+          </h1>
+          <div class="hidden sm:flex items-center ml-auto">
+            <ul class="flex gap-4 text-gray-600 font-medium">
+              <li><a href="#" class="hover:text-[#1c3f3a]">Home</a></li>
+              <li><a href="#" class="hover:text-[#1c3f3a]">About</a></li>
+              <li><a href="#" class="hover:text-[#1c3f3a]">Services</a></li>
+              <li><a href="#" class="hover:text-[#1c3f3a]">Contact</a></li>
+            </ul>
+          </div>
+          <div class="sm-hidden flex justify-center">
+            <button onclick="menuOpen()" id="menubtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6 text-[#1c3f3a] sm:hidden"
+                id="openIcon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6 text-[#1c3f3a] hidden"
+                id="closeIcon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <div id="mobileMenu" class="hidden sm:hidden px-0 pb-6 shadow-md rounded-b-lg">
+          <ul class="flex flex-col gap-4 justify-end text-gray-600 font-medium shadow-md px-12 pb-6">
+            <li><a href="#" class="hover:text-[#1c3f3a]">Home</a></li>
+            <li><a href="#" class="hover:text-[#1c3f3a]">About</a></li>
+            <li><a href="#" class="hover:text-[#1c3f3a]">Services</a></li>
+            <li><a href="#" class="hover:text-[#1c3f3a]">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- Header Ends Here -->
+
+      <!-- Hero Starts Here -->
+      <section class="md:h-[89vh] flex bg-white px-12 py-12 md:py-0">
+        <!-- Left col -->
+        <div class="md:w-[50%] flex flex-col justify-center gap-2">
+          <span class="text-[#1c3f3a] font-semibold text-sm uppercase"
+            >Try It Now!</span
+          >
+          <h1 class="font-semibold text-3xl md:text-4xl">
+            Crafting Digital Solutions
+          </h1>
+          <p class="w-[80%] text-md md:text-lg">
+            Empowering businesses through innovative software development,
+            creative design, and cutting-edge technology.
+          </p>
+          <div class="flex gap-5 mt-3 text-sm md:text-lg">
+            <a
+              href="#"
+              class="px-6 sm:px-8 py-2 font-semibold bg-[#1c3f3a] border-[1.5px] border-transparent rounded-full text-white hover:bg-white hover:text-[#1c3f3a] hover:border-[#1c3f3a] hover:border-[1.5px] duration-500 ease-in-out transition-all"
+              >Get Start</a
+            >
+            <a
+              href="#"
+              class="px-4 sm:px-8 py-2 font-semibold border-[1.5px] border-[#1c3f3a] rounded-full text-[#1c3f3a] hover:bg-[#1c3f3a] hover:text-white hover:border-[1.5px] hover:border-transparent duration-500 ease-in-out transition-all"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <!-- Right col -->
+        <div class="hidden md:flex w-[50%] h-[100%]">
+          <div class="flex justify-center lg:justify-end items-center bg-white">
+            <div
+              class="w-[70%] h-[70%] rounded-lg overflow-hidden relative p-3"
+            >
+              <div
+                class="w-[200px] absolute top-0 left-0 p-3 bg-white rounded-lg"
+              >
+                <div class="bg-[#e0eae8] p-4 rounded-lg">
+                  <span class="font-medium text-4xl text-[#1c3f3a]">256+</span>
+                  <p class="text-xs pt-2">
+                    Lorem ipsum dolor sit amet, adipisicing elit. Tenetur,
+                    autem.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="p-3 bottom-0 right-0 bg-white absolute rounded-lg w-[160px]"
+              >
+                <div class="p-3 bg-[#1c3f3a] rounded-lg text-white">
+                  <span class="text-4xl font-medium">70+</span>
+                  <p class="text-xs pt-2">Lorem ipsum dolor sit, amet elit.</p>
+                </div>
+              </div>
+              <img
+                src="./src/images/2.jpg"
+                alt=""
+                class="object-cover w-full h-full rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Ends Here -->
+
+      <!-- Clients -->
+      <section class="bg-white border-y-1 border-[#f5f5f5] mb-3 px-6 md:px-12">
+        <div class="flex gap-x-4 items-center flex-wrap justify-evenly py-6">
+          <div
+            class="w-24 h-12 bg-[#1c3f3a] mask-image"
+            style="
+              -webkit-mask: url('../src/images/clients/amazon.png') no-repeat
+                center / contain;
+            "
+          ></div>
+          <div
+            class="w-24 h-12 bg-[#1c3f3a] mask-image"
+            style="
+              -webkit-mask: url('../src/images/clients/dribbble.png') no-repeat
+                center / contain;
+            "
+          ></div>
+          <div
+            class="w-24 h-12 bg-[#1c3f3a] mask-image"
+            style="
+              -webkit-mask: url('../src/images/clients/hubspot2.png') no-repeat
+                center / contain;
+            "
+          ></div>
+          <div
+            class="w-24 h-12 bg-[#1c3f3a] mask-image"
+            style="
+              -webkit-mask: url('../src/images/clients/netflix.png') no-repeat
+                center / contain;
+            "
+          ></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section
+        class="flex flex-col md:flex-row gap-5 px-12 py-16 md:items-center"
+      >
+        <div class="md:w-[40%]">
+          <span class="text-[#1c3f3a] font-semibold text-sm uppercase"
+            >Who We Are!</span
+          >
+          <h3 class="text-2xl md:text-3xl font-medium leading-snug">
+            Creating Meaningful Digital Experiences
+          </h3>
+        </div>
+        <div class="flex flex-col md:w-[60%]">
+          <p class="text-md md:text-lg text-gray-600 pb-5 w-[95%]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa rem
+            tempore velit doloremque omnis atque illo quod necessitatibus, neque
+            aut, Culpa rem tempore velit doloremque omnis atque illo quod
+            necessitatibus.
+          </p>
+
+          <a
+            href="#"
+            class="w-auto self-start inline-block px-8 py-2 font-semibold border-[1.5px] border-[#1c3f3a] rounded-full text-[#1c3f3a] hover:bg-[#1c3f3a] hover:text-white hover:border-[1.5px] hover:border-transparent duration-500 ease-in-out transition-all"
+            >Get In Touch Now</a
+          >
+        </div>
+      </section>
+
+      <!-- Service Section-->
+      <section class="px-12 py-16 bg-white">
+        <div class="flex flex-col lg:flex-row gap-5 items-center">
+          <!-- left col -->
+          <div class="lg:w-[40%] flex justify-center">
+            <div class="md:w-[80%] text-center">
+              <span class="uppercase text-sm text-[#1c3f3a] font-semibold"
+                >Values</span
+              >
+              <h1 class="text-2xl sm:text-3xl font-medium leading-snug">
+                Solutions Built for the Future
+              </h1>
+              <p class="text-gray-500 text-md md:text-lg pt-5 md:pt-3">
+                Our team delivers modern web applications, seamless user
+                experiences, and technology-driven solutions that empower
+                businesses to stay ahead of the competition.
+              </p>
+            </div>
+          </div>
+          <!-- right col -->
+          <div
+            class="lg:w-[60%] flex flex-wrap gap-7 justify-center pt-5 lg:pt-0"
+          >
+            <!-- Card -->
+
+            <div
+              class="w-[250px] hover:bg-[#ebe8d8] p-7 rounded-lg shadow hover:shadow-xl transition-all duration-500 hover:duration-500 group"
+            >
+              <div
+                class="w-[50px] h-[50px] bg-[#e0eae8] group-hover:bg-[#1c3f3a] rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8 text-[#1c3f3a] group-hover:text-[#e0eae8]"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.28 5.22a.75.75 0 0 1 0 1.06L2.56 10l3.72 3.72a.75.75 0 0 1-1.06 1.06L.97 10.53a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Zm7.44 0a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L17.44 10l-3.72-3.72a.75.75 0 0 1 0-1.06ZM11.377 2.011a.75.75 0 0 1 .612.867l-2.5 14.5a.75.75 0 0 1-1.478-.255l2.5-14.5a.75.75 0 0 1 .866-.612Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-[#1c3f3a] text-lg font-semibold pt-3">
+                Web Development
+              </h3>
+              <p class="text-gray-500">
+                Modern, responsive, and high-performing web solutions tailored
+                to your brand.
+              </p>
+            </div>
+            <div
+              class="w-[250px] hover:bg-[#ebe8d8] p-7 rounded-lg shadow hover:shadow-xl transition-all duration-500 hover:duration-500 group"
+            >
+              <div
+                class="w-[50px] h-[50px] bg-[#e0eae8] group-hover:bg-[#1c3f3a] rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8 text-[#1c3f3a] group-hover:text-[#e0eae8]"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.28 5.22a.75.75 0 0 1 0 1.06L2.56 10l3.72 3.72a.75.75 0 0 1-1.06 1.06L.97 10.53a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Zm7.44 0a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L17.44 10l-3.72-3.72a.75.75 0 0 1 0-1.06ZM11.377 2.011a.75.75 0 0 1 .612.867l-2.5 14.5a.75.75 0 0 1-1.478-.255l2.5-14.5a.75.75 0 0 1 .866-.612Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-[#1c3f3a] text-lg font-semibold pt-3">
+                Web Development
+              </h3>
+              <p class="text-gray-500">
+                Modern, responsive, and high-performing web solutions tailored
+                to your brand.
+              </p>
+            </div>
+            <div
+              class="w-[250px] hover:bg-[#ebe8d8] p-7 rounded-lg shadow hover:shadow-xl transition-all duration-500 hover:duration-500 group"
+            >
+              <div
+                class="w-[50px] h-[50px] bg-[#e0eae8] group-hover:bg-[#1c3f3a] rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8 text-[#1c3f3a] group-hover:text-[#e0eae8]"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.28 5.22a.75.75 0 0 1 0 1.06L2.56 10l3.72 3.72a.75.75 0 0 1-1.06 1.06L.97 10.53a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Zm7.44 0a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L17.44 10l-3.72-3.72a.75.75 0 0 1 0-1.06ZM11.377 2.011a.75.75 0 0 1 .612.867l-2.5 14.5a.75.75 0 0 1-1.478-.255l2.5-14.5a.75.75 0 0 1 .866-.612Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-[#1c3f3a] text-lg font-semibold pt-3">
+                Web Development
+              </h3>
+              <p class="text-gray-500">
+                Modern, responsive, and high-performing web solutions tailored
+                to your brand.
+              </p>
+            </div>
+            <div
+              class="w-[250px] hover:bg-[#ebe8d8] p-7 rounded-lg shadow hover:shadow-xl transition-all duration-500 hover:duration-500 group"
+            >
+              <div
+                class="w-[50px] h-[50px] bg-[#e0eae8] group-hover:bg-[#1c3f3a] rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8 text-[#1c3f3a] group-hover:text-[#e0eae8]"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.28 5.22a.75.75 0 0 1 0 1.06L2.56 10l3.72 3.72a.75.75 0 0 1-1.06 1.06L.97 10.53a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Zm7.44 0a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L17.44 10l-3.72-3.72a.75.75 0 0 1 0-1.06ZM11.377 2.011a.75.75 0 0 1 .612.867l-2.5 14.5a.75.75 0 0 1-1.478-.255l2.5-14.5a.75.75 0 0 1 .866-.612Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-[#1c3f3a] text-lg font-semibold pt-3">
+                Web Development
+              </h3>
+              <p class="text-gray-500">
+                Modern, responsive, and high-performing web solutions tailored
+                to your brand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section
+        class="px-12 py-16 md:h-70 bg-gradient-to-b from-[#1c3f3a] to-[#e0eae8] text-white"
+      >
+        <div class="flex justify-center items-center flex-col text-center">
+          <span class="font-semibold text-sm uppercase">Get to Know Us!</span>
+          <h3 class="text-2xl sm:text-3xl md:text-4xl font-medium leading-snug">
+            Creating Meaningful Digital Experiences
+          </h3>
+          <div class="flex flex-col sm:flex-row sm:gap-10 gap-5 mt-10">
+            <a
+              href="#"
+              class="w-auto px-8 py-2 block bg-[#1c3f3a] border-[1.5px] border-transparent rounded-full text-white hover:bg-transparent hover:text-[#1c3f3a] hover:border-[#1c3f3a] hover:border-[1.5px] duration-500 ease-in-out transition-all flex justify-between gap-8 font-semibold"
+              >Get In Touch Now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="w-auto px-8 py-2 block border-[1.5px] border-[#1c3f3a] text-[#1c3f3a] rounded-full flex justify-between gap-8 font-semibold hover:bg-[#1c3f3a] hover:text-white hover:border-[1.5px] hover:border-transparent duration-500 ease-in-out transition-all"
+              >Get In Touch Now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Section -->
+      <section class="px-12 py-16">
+        <div class="flex flex-col text-center gap-5 items-center">
+          <div class="lg:w-[40%]">
+            <span class="text-[#1c3f3a] font-semibold text-sm uppercase"
+              >Who We Are!</span
+            >
+            <h3 class="text-2xl sm:text-3xl font-medium leading-snug">
+              Creating Meaningful Digital
+            </h3>
+          </div>
+          <div class="flex flex-col md:w-[70%]">
+            <p class="text-md md:text-lg text-gray-600 pb-4 w-[95%]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
+              rem tempore velit doloremque omnis atque illo quod necessitatibus.
+            </p>
+          </div>
+        </div>
+        <!-- Project img -->
+        <div class="mt-5 flex flex-wrap gap-4 justify-center">
+          <div class="sm:w-[48%] rounded-lg overflow-hidden">
+            <img
+              src="./src/images/1.jpg"
+              alt=""
+              class="w-[100%] rounded-lg overflow-hidden object-cover"
+            />
+          </div>
+          <div class="sm:w-[48%] rounded-lg overflow-hidden">
+            <img
+              src="./src/images/2.jpg"
+              alt=""
+              class="w-[100%] rounded-lg overflow-hidden object-cover"
+            />
+          </div>
+          <div class="sm:w-[48%] rounded-lg overflow-hidden">
+            <img
+              src="./src/images/2.jpg"
+              alt=""
+              class="w-[100%] rounded-lg overflow-hidden object-cover"
+            />
+          </div>
+          <div class="sm:w-[48%] rounded-lg overflow-hidden">
+            <img
+              src="./src/images/1.jpg"
+              alt=""
+              class="w-[100%] rounded-lg overflow-hidden object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="bg-[#1c3f3a] text-gray-300 px-6 md:px-12 py-16">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-12 gap-10">
+          <!-- Brand & Description -->
+          <div class="md:col-span-4 sm:col-span-12">
+            <h1 class="text-4xl font-bold text-white">CodeCraft</h1>
+            <p class="text-gray-400 mt-4 leading-relaxed">
+              We craft modern, scalable, and visually stunning digital
+              solutions. Bringing ideas to life through technology, creativity,
+              and innovation.
+            </p>
+          </div>
+
+          <!-- Company Links -->
+          <div class="md:col-span-2 sm:col-span-6">
+            <h5 class="text-white font-semibold uppercase tracking-wide">
+              Company
+            </h5>
+            <ul class="space-y-2 mt-4">
+              <li><a href="#" class="hover:text-white transition">About</a></li>
+              <li>
+                <a href="#" class="hover:text-white transition">Services</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Projects</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="md:col-span-2 sm:col-span-6">
+            <h5 class="text-white font-semibold uppercase tracking-wide">
+              Resources
+            </h5>
+            <ul class="space-y-2 mt-4">
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Documentation</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Tutorials</a>
+              </li>
+              <li><a href="#" class="hover:text-white transition">Blog</a></li>
+              <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="md:col-span-2 sm:col-span-6">
+            <h5 class="text-white font-semibold uppercase tracking-wide">
+              Legal
+            </h5>
+            <ul class="space-y-2 mt-4">
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Cookies Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="md:col-span-2 sm:col-span-6">
+            <h5 class="text-white font-semibold uppercase tracking-wide">
+              Follow Us
+            </h5>
+            <ul class="space-y-2 mt-4">
+              <li>
+                <a href="#" class="hover:text-white transition">Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Instagram</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">LinkedIn</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-500 mt-16 pt-6 text-center text-gray-400 text-sm"
+        >
+          © 2025 CodeCraft — All rights reserved.
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      const menubtn = document.getElementById("menubtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const openIcon= document.getElementById('openIcon')
+      const closeIcon= document.getElementById('closeIcon')
+      menubtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        openIcon.classList.toggle('hidden')
+        closeIcon.classList.toggle('hidden')
+      });
+    </script>
+  </body>
+</html>
+
